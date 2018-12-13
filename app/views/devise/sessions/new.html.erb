@@ -1,10 +1,10 @@
 <div class="row">
-  <div class="col-sm-6 mx-auto border mt-4 round pt-3">
-    <div class="panel panel-default devise-bs">
-      <div class="panel-heading">
+  <div class="col-sm-6 mx-auto  mt-4 round pt-3">
+    <div class="panel border  panel-default devise-bs">
+      <div class="panel-heading px-3 py-2 border bg-light">
         <h4><%= t('.sign_in', default: 'Sign in') %></h4>
       </div>
-      <div class="panel-body">
+      <div class="panel-body p-3">
         <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { role: 'form' }) do |f| %>
           <div class="form-group">
             <%= f.label :email %>
